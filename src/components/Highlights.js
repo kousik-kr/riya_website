@@ -4,8 +4,8 @@ export const createHighlights = ({ highlights }) =>
   createElementFromHTML(`
     <section id="about" class="content-section">
       <div class="section-heading">
-        <p class="eyebrow">Professional Impact</p>
-        <h2>Why Professor Hayes Stands Out</h2>
+        <p class="eyebrow">Strengths</p>
+        <h2>Why Riya Stands Out</h2>
       </div>
       <div class="cards-grid">
         ${createList(
