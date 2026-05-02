@@ -1,6 +1,6 @@
 import { createElementFromHTML, createList } from '../utils/dom.js';
 
-export const createPageFooter = ({ fullName, email, office, university, location, socialLinks, cvUrl, resumeUrl }) => {
+export const createPageFooter = ({ fullName, role, email, office, university, location, socialLinks, cvUrl, resumeUrl }) => {
   const currentYear = new Date().getFullYear();
   
   return createElementFromHTML(`
@@ -9,7 +9,7 @@ export const createPageFooter = ({ fullName, email, office, university, location
         <div class="footer-section">
           <h3>About</h3>
           <p class="footer-name">${fullName}</p>
-          <p class="footer-role">PhD Candidate in Computer Science</p>
+          <p class="footer-role">${role}</p>
           <ul class="footer-info">
             <li><i class="fa-solid fa-envelope"></i> <a href="mailto:${email}">${email}</a></li>
             <li><i class="fa-solid fa-map-pin"></i> ${office}</li>

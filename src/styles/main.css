@@ -270,11 +270,49 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1.5rem;
+}
+
+.profile-photo-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(30, 58, 95, 0.2);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(42, 157, 143, 0.3);
+  border: 3px solid white;
 }
 
 .hero-card h3 {
   color: var(--primary);
-  margin-bottom: 1rem;
+  margin: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -313,25 +351,29 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.metric-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, var(--accent), transparent);
-  opacity: 0.05;
-  pointer-events: none;
+.metric-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: color-mix(in oklab, var(--accent) 15%, transparent);
+  border-radius: 12px;
 }
 
 .metric-card h3 {
   color: var(--primary);
   font-size: 2.2rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 .metric-card p {

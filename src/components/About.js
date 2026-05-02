@@ -17,7 +17,7 @@ export const createAbout = ({ fullName, role, university, heroStatement, focusAr
       </section>
 
       <section class="about-section glass-panel">
-        <h2>Research Focus</h2>
+        <h2><i class="fa-solid fa-magnifying-glass"></i> Research Focus</h2>
         <p>My research integrates machine learning with human-computer interaction to develop intelligent systems that understand and adapt to human behavior. I'm passionate about:</p>
         <div class="focus-areas">
           ${focusAreas.map(area => `<div class="focus-item"><i class="fa-solid fa-star"></i> ${area}</div>`).join('')}
@@ -25,9 +25,9 @@ export const createAbout = ({ fullName, role, university, heroStatement, focusAr
       </section>
 
       <section class="about-section glass-panel">
-        <h2>Background</h2>
+        <h2><i class="fa-solid fa-info-circle"></i> Background</h2>
         <p>
-          I am a PhD Candidate in Computer Science at ${university}, where I work on cutting-edge research at the intersection of machine learning and human-AI interaction. 
+          I am a PhD Student in Computer Science at ${university}, where I work on cutting-edge research at the intersection of machine learning and human-AI interaction. 
           My work focuses on developing adaptive systems that improve user engagement and system performance through intelligent feedback mechanisms.
         </p>
         <p>
@@ -37,7 +37,7 @@ export const createAbout = ({ fullName, role, university, heroStatement, focusAr
       </section>
 
       <section class="about-section glass-panel">
-        <h2>Research Impact</h2>
+        <h2><i class="fa-solid fa-chart-line"></i> Research Impact</h2>
         <p>
           My research has been published at top-tier venues including NeurIPS, CHI, ICML, and others. I've also contributed to open-source projects that are used by thousands of developers worldwide.
           Beyond research, I'm committed to teaching and mentoring the next generation of computer scientists.

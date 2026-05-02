@@ -1,21 +1,22 @@
 export const profile = {
   fullName: 'Riya Goyal',
   shortName: 'Riya',
-  role: 'PhD Candidate in Computer Science',
+  role: 'PhD Student in Computer Science',
   university: 'Stanford University',
   location: 'Stanford, California',
   email: 'riya.goyal@stanford.edu',
   office: 'Gates Computer Science Building',
   advisor: 'Prof. John Smith',
+  profilePhoto: 'https://via.placeholder.com/300x300?text=Riya+Goyal',
   heroStatement:
     'Building intelligent systems that understand and adapt to human behavior. Passionate about machine learning, human-computer interaction, and responsible AI design.',
   focusAreas: ['Machine Learning', 'Human-AI Interaction', 'Adaptive Systems'],
   
   metrics: [
-    { label: 'Publications', value: '7' },
-    { label: 'Conference Presentations', value: '12' },
-    { label: 'Awards & Recognition', value: '5' },
-    { label: 'Open Source Contributions', value: '20+' }
+    { label: 'Publications', value: '7', icon: 'fa-book-open' },
+    { label: 'Conference Presentations', value: '12', icon: 'fa-presentation' },
+    { label: 'Awards & Recognition', value: '5', icon: 'fa-trophy' },
+    { label: 'Open Source Contributions', value: '20+', icon: 'fa-code-branch' }
   ],
 
   education: [
