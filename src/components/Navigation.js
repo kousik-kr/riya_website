@@ -1,15 +1,14 @@
 import { createElementFromHTML } from '../utils/dom.js';
 
-export const createNavigation = ({ shortName }, activePage = 'home') =>
+export const createNavigation = ({ shortName, profilePhoto }, activePage = 'home') =>
   createElementFromHTML(`
     <header class="site-header glass-panel sticky">
       <div class="header-container">
         <a class="brand" href="/">
-          <i class="fa-solid fa-flask-vial"></i>
+          <img src="${profilePhoto}" alt="${shortName}" class="brand-photo" />
           ${shortName}
         </a>
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="/" class="${activePage === 'home' ? 'active' : ''}">Home</a>
           <a href="/about.html" class="${activePage === 'about' ? 'active' : ''}">About</a>
           <a href="/research.html" class="${activePage === 'research' ? 'active' : ''}">Research</a>
           <a href="/projects.html" class="${activePage === 'projects' ? 'active' : ''}">Projects</a>
